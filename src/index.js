@@ -1,7 +1,8 @@
 import React, { Component, PropTypes } from 'react';
-import './index.css';
-import ic_back from './ic_back.svg';
-import ic_forward from './ic_forward.svg';
+import path from 'path';
+require(path.resolve('./index.css'));
+const ic_back = require(path.resolve('./ic_back.svg'));
+const ic_forward = require(path.resolve('./ic_forward.svg'));
 
 const config = {
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
